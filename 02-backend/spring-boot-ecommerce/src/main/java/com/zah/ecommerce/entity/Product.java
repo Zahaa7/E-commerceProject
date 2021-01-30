@@ -1,4 +1,4 @@
-package com.zah.ecommerce.entity;
+package com.luv2code.ecommerce.entity;
 
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
-@Table(name = "product")
+@Table(name="product")
 @Data
 public class Product {
 
@@ -23,7 +23,7 @@ public class Product {
     private ProductCategory category;
 
     @Column(name = "sku")
-    private String sku;                // stock keeping unit
+    private String sku;
 
     @Column(name = "name")
     private String name;
@@ -38,14 +38,14 @@ public class Product {
     private String imageUrl;
 
     @Column(name = "active")
-    private boolean isActive;
+    private boolean active;
 
     @Column(name = "units_in_stock")
     private int unitsInStock;
 
     @Column(name = "date_created")
-    @CreationTimestamp                 // special annotations - Hibernate will automatically
-    private Date dateCreated;          // manage the timestamps
+    @CreationTimestamp
+    private Date dateCreated;
 
     @Column(name = "last_updated")
     @UpdateTimestamp
