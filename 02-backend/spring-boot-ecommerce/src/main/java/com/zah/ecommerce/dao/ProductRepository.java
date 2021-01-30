@@ -1,6 +1,6 @@
-package com.luv2code.ecommerce.dao;
+package com.zah.ecommerce.dao;
 
-import com.luv2code.ecommerce.entity.Product;
+import com.zah.ecommerce.entity.Product;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

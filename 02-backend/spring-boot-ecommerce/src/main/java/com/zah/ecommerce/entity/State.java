@@ -1,4 +1,4 @@
-package com.luv2code.ecommerce.entity;
+package com.zah.ecommerce.entity;
 
 import lombok.Data;
 
@@ -19,7 +19,7 @@ public class State {
 
     @ManyToOne
     @JoinColumn(name="country_id")
-    private Country country;
+    private com.luv2code.ecommerce.entity.Country country;
 
 }
 

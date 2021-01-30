@@ -1,4 +1,4 @@
-package com.luv2code.ecommerce.entity;
+package com.zah.ecommerce.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -22,7 +22,7 @@ public class ProductCategory {
     private String categoryName;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "category")
-    private Set<Product> products;
+    private Set<com.luv2code.ecommerce.entity.Product> products;
 
 }
 
